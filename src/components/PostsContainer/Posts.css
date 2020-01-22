@@ -4,7 +4,7 @@
   min-width: 400px;
   margin: 5px auto;
 }
-.post-header{
+.post-header {
   display: flex;
   align-items: center;
 }
@@ -51,6 +51,20 @@
 }
 .like-number {
   width: 100px;
-  margin: 15px 0px;
+  margin: 10px 0px;
+  font-weight: bold;
+
   font-size: 16px;
+}
+
+.like-icons {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.heart:hover {
+  color: red;
+}
+.bubble:hover {
+  color: blue;
 }

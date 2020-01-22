@@ -1,26 +1,43 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
 .comment-text {
   text-align: left;
   padding: 2px;
-  margin-left: 4px;
+  padding-left: 4px;
+  margin-left: 9px;
 }
 .comment {
   font-size: 16px;
 }
-.comment-form  {
+.comment-form {
   margin: 10px 0;
   width: 100%;
+  position: relative;
 }
 .comment-form input {
-  width: 100%;
+  width: 93%;
   font-size: 14px;
-  padding: 10px;
+  padding: 11px;
   border: none;
   border-top: 1px solid #efefef;
   color: #999;
 }
+.comment-form .fa-ellipsis-h {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  color: rgb(34, 34, 34);
+  font-size: 1.2rem;
+}
 .user {
   font-size: 14px;
-  margin-left: 5px;
+
   color: black;
   font-weight: bold;
+}
+.time-stamp {
+  font-size: 0.75rem;
+  text-align: left;
+  padding: 0 13px;
+  color: gray;
 }

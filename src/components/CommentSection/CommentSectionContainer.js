@@ -4,12 +4,26 @@ import CommentInput from "./CommentInput";
 import Comment from "./Comment";
 import "./Comment.css";
 
-const CommentSection = props => {
+const CommentSection = (props) => {
   // Add state for the comments
+  const [comment] = useState(props.comments);
+  console.log(comment);
 
   return (
     <div>
-      {/* map through the comments data and return the Comment component */}
+      {comment.map((comment, index) => {
+        return (
+          <Comment
+            key={index}
+            comment={comment}
+            timestamp={props.timestamp}
+            postId={props.postId}
+          />
+        );
+      })}
+      <div className="time-stamp-box">
+        <p className="time-stamp"> {props.timestamp}</p>
+      </div>
       <CommentInput />
     </div>
   );
