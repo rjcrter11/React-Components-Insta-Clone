@@ -35,3 +35,9 @@
   color: black;
   font-weight: bold;
 }
+.time-stamp {
+  font-size: 0.75rem;
+  text-align: left;
+  padding: 0 13px;
+  color: gray;
+}

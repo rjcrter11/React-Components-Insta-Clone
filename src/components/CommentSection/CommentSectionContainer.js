@@ -21,7 +21,9 @@ const CommentSection = (props) => {
           />
         );
       })}
-
+      <div className="time-stamp-box">
+        <p className="time-stamp"> {props.timestamp}</p>
+      </div>
       <CommentInput />
     </div>
   );
